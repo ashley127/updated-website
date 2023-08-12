@@ -1,12 +1,20 @@
 import React from 'react'
 import Lottie from "lottie-react"
+import Typewriter from "typewriter-effect";
 import animationData from "../assets/animation_ll6sohn8.json"
 
 export default function name(){
     return(
         <div>
-            <h1>Hi, I'm <i>Ashley Zhao</i></h1>
-            <Lottie animationData={animationData}/>
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString("Hi!")
+                        .pauseFor(500)
+                        .typeString("My name is Ashley Zhao")
+                        .start();
+                }}
+            />
         </div>   
     )
 }
