@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0
+}
+
+.nav{
+    background: grey;
+    color:White;
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.nav ul{
+    padding:5%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.main{
+    margin-left: 5%;
+}
+
+.nav li.active{
+    background-color: green;
+}
+
+.nav a{
+    color: inherit;
+    text-decoration: none;
+}
+.nav li:hover {
+    background-color: red;
+}
